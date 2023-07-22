@@ -1,0 +1,95 @@
+# Culture and Conduct {#sec-culture}
+
+My personal philosophy -- in matters scientific and more generally -- is that it is better to work within a framework of general principles than it is to develop specific rules and policies for every conceivable eventuality. When we try litigate or otherwise incentivize behavior that should follow from moral principles, we often make outcomes worse than if we focused more on the broader moral principles, a phenomenon [Sam Bowles calls](https://www.psychologytoday.com/us/blog/the-moral-economy/201607/crowding-out-virtue) "the crowding-out of virtue." Be a good person and a good scientist. Treat people as you would want to be treated and contribute to public goods. Like any other important institution in society, Science depends on a social contract. Scientific questions must be pursued with integrity, ethical grounding, and the broad provision of public goods. We contribute public goods to the scientific community through participation in the key scientific debates of our area(s), our sharing of data and methods, and our willingness to engage in peer review, public communication of science, and policy engagement.
+
+In the following sections, I lay out some specific expectations for people in my research group, including graduate students, post-docs, and myself.
+
+## General Expectations
+
+-   Everyone in this group has a right to feel safe and respected regardless of career position, gender, race or ethnicity, sexual orientation, or country of origin. I expect everyone to treat everyone in the lab (preferably in life more generally) with the same way you would like to be treated.
+
+-   We work collaboratively and support each other in our research and career development. We each have our own specific interests, backgrounds, and research projects, but we are ultimately a team. I expect lab members to be supportive and communicate directly, openly, and empathetically with one another.
+
+-   Stay up-to-date on your human-subjects training. Ethical protection of human subjects is of the utmost importance, particularly when you are performing research on sensitive topics such as personal contacts, infectious disease, or reproductive decisions. Don't get put in a position where you must delay your research or make yourself ineligible for funding because you've let your human-subjects certification lapse.
+
+-   Treat everyone with respect. Think particularly hard about how you engage with the many hard-working administrators and support staff at our university and beyond. Our success depends on the inputs and good-will of many people whose work all-too-often goes unappreciated and unrecognized.
+
+## Expectations for Graduate Students {#sec-grad-expectations}
+
+-   Take responsibility for your research and your dissertation. Ultimately, this is your work and your advisors are there to help you accomplish your research objectives, not to do the work for you.
+
+-   Expect to work hard. A Ph.D. is a grind and you're not going to write a good dissertation if you put in half effort.
+
+-   Show yourself! Being in the office is the best way to ensure frequent face-to-face interactions with me and with other knowledgeable people in the lab, in the department, and in the broader Stanford community.
+
+-   Work with me and any co-advisors to develop an Individual Development Plan (IDP) that helps match your professional-development needs to your professional goals.
+
+-   Be honest about your professional goals. It's OK for them to change as you progress through your graduate program. If they change, let me know and we will discuss how to accommodate your changing goals.
+
+-   Prioritize group meetings. We are all busy, but there is generally more scheduling flexibility than people let on. It's often a matter of priorities.
+
+-   If there is an analytical technique or method that you need, and I teach a class on it, take that class. This is the best way to make sure that we are on the same page regarding methods and your skills. Different students will have different interests but it probably would be a good idea to become familiar with the material in my bread-and-butter classes such as [Biological and Social Networks](http://web.stanford.edu/class/ess360/), [Demography and Life History Theory](http://web.stanford.edu/class/ess364/), [Adaptation](https://github.com/eehh-stanford/adaptation-class), and [Global Change and Emerging Infectious Disease](http://web.stanford.edu/class/earthsys214/).
+
+-   Help your colleagues. Attend practice talks and other lab events. Provide feedback. Help people with their methods.
+
+-   Write papers, but do so within the framework of a broader professional-development plan. Papers should emerge as a natural part of your progress through the Ph.D. program. Taking on lots of ancillary projects is a recipe for falling behind on the key organizing principle of your graduate work, your dissertation research.
+
+-   Communicate your progress to me. If you are around the office, there will probably be many opportunities to do this in an informal (and frequent) manner. If you are away a lot, either because of fieldwork or living remotely, we should schedule regular meetings at an interval appropriate to the stage of your graduate career.
+
+-   If you want me to be directly engaged in your work (as opposed to just advising), pick a topic for your research that is directly related to my current research interests and expertise. If you decide to work on a topic further away from my expertise, you should expect a more independent graduate experience. Depending on the specific circumstances, you should consider changing advisors. No hard feelings; people's interests change as they learn more about different fields.
+
+-   Understand that feedback and validation are two different things. Feedback, which should always be constructive, helps us improve. Validation does not (necessarily) do this.
+
+-   Attend professional meetings and present work. If you have a poster or a presentation accepted, follow through and do a good job. Chances are, someone else didn't get accepted because you were, so there is a social cost to flaking (remember the social contract that underlies Science).
+
+-   Stay on top of the rules and expectations that apply to you by your department or program and school. These change frequently and you are the best person to know what rules apply to you.
+
+-   Give me sufficient lead time to write letters of recommendation. Typically, this is about two weeks. Make sure I have an up-to-date version of your CV and any documentation describing the position, fellowship, etc. for which you are applying.
+
+-   Don't be shy about reminding me of deadlines that I've agreed to meet for you.
+
+## Expectations for Post-Doctoral Scholars and Research Scientists
+
+-   Do high-quality, independent research. Collaborate with me and with others in the lab.
+
+-   Show leadership, take an extra role in organizing lab events.
+
+-   Think actively about the job market. Work with me -- and other faculty -- to formulate a strategy for professional advancement. This should be a central part of your [Individual Development Plan](https://postdocs.stanford.edu/current-postdocs/navigating-your-individual-development-plan-idp/your-individual-development-plan) (IDP).
+
+-   Help mentor students.
+
+-   Help write grants. Grant-writing is a fundamental skill for junior faculty and getting practice at it while a post-doc will pay dividends when you make the next career move.
+
+## Expectations for Me
+
+-   Establish a positive and inclusive lab culture.
+
+-   Do high-quality independent research. Collaborate with students, post-docs, and others in the lab.
+
+-   Recruit a high-quality and diverse group of students, post-docs, and collaborators for the lab. Help Stanford achieve its broader efforts in recruiting and retaining a diverse community of top scholars.
+
+-   Involve students and other people in the lab when it's appropriate. There is an unusual diversity of interests typically held by people in my lab and not every collaborative project is right for every student (the wrong project can be distracting for your progress).
+
+-   Expect to be reminded of important deadlines, events, etc. Redundancy is the secret to effective communication over noisy channels.
+
+-   Network furiously and advocate for people in my group and my broader network.
+
+-   Learn from the other people who comprise the lab.
+
+## Authorship
+
+Be generous with authorship and the allocation of credit more generally. The great Don Kennedy wrote a prescient essay on [academic authorship](https://doresearch.stanford.edu/policies/research-policy-handbook/conduct-research/academic-authorship) that helps lay out the rights and responsibilities of authors.
+
+Should person X be included as a co-author? The answer is "yes" if they played a significant role in more than one of the following: formulating the research question, planning the research, doing the data collection/fieldwork, analyzing the data, writing the paper, extensively editing the paper, or generally facilitating the project (e.g., through funding, providing materials or code, lab space/equipment, etc.).
+
+As Kennedy noted, "[t]here is a tight coupling between authorship and responsibility." Sharing credit for a paper entails sharing responsibility for its veracity and authenticity.
+
+As with so many other things, interdisciplinarity can complicate this. If you are collaborating with someone about whose discipline you know very little, the responsibility for the work of your co-author may be different. Kennedy notes that in such a case  "where the work is a collaboration between scholars from different fields who lack intimate command of one another's areas--some explicit disclosure of that fact would seem desirable."
+
+Different disciplines encode information differently in authorship order. We generally follow the standard practice for the biological sciences. The first author led the paper, its organization, and especially its writing. Senior author goes last in multi-authored papers. Some journals allow joint first-authorship.
+
+When your collaborative research is in the planning phase, think about how you can divide up the writing so that different people who contributed equally can be first authors on different papers.
+
+## Responsibilities to Communities
+
+Community-engaged research is an ideal. The reality is that different people in a lab like ours are going to be engaged in different communities. There are certain commonalities in terms of our responsibilities to these communities.

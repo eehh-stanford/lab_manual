@@ -1,0 +1,32 @@
+# Communications  {#sec-comms}
+
+Communication is essential in science, as it is in life more generally. We have various modes of communication. These include:
+
+## Email
+
+Email tends to work best for longer communications and more formal requests. 
+
+Email, of course, is one of the most fraught modes of communication in the modern world. I try to reply quickly, but when email comes at awkward times, it's too easy for it to get buried in the inbox. Generally, I think that my email response-time distribution can be characterized by a two-component mixture. The first component has a very short waiting time. I reply immediately. The second component, I'm afraid, has a large mean and a long right tail.
+
+With this fact in mind, do not be afraid to follow up on emails.
+
+It's generally a good idea to be especially discreet with emails. If you must share sensitive information, you can use the [secure email](https://uit.stanford.edu/service/secureemail) functionality offered by Stanford UIT. Basically, include the work "Secure:" in your email's subject line (and, of course, use your Stanford email account). The message will be encrypted and only readable by accounts addressed in the original email. If you forward your Stanford email to a personal Gmail account, for example, you will not be able to read an encrypted message. 
+
+The lab email list is: `heeh-group@lists.stanford.edu`. 
+
+## Slack
+
+The lab slack workspace is [hueveche](https://hueveche.slack.com) (HUman EVolutionary ECology and HEalth).
+
+Slack is a very useful tool, but I will admit that I find it somewhat unreliable at times. Notifications are not as predictable as I feel like they should be. So if you, e.g., DM me in Slack and I don't respond, try another mode of communication as well. Moreover, I can get swamped by other Slack workspaces, particularly from the student residence where I am a resident fellow. 
+
+Also, through its institution-based organization, Slack doesn't represent the way we actually do science particularly well. I'm always on the lookout for a better collaboration tool.
+
+
+## Lab Meetings
+
+We have (approximately) weekly lab meetings. These are a vital forum for maintaining communications, learning about what people are working on, fostering collaboration, and developing community.
+
+With a highly-interdisciplinary group of fluctuating composition and the frequent loss of members to fieldwork, it can sometimes be hard to keep lab meetings going. It's worth the effort. 
+
+You should plan to attend the weekly meetings and contribute, particularly when your lab-mates are presenting their own work.

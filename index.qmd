@@ -1,0 +1,37 @@
+# Human Evolutionary Ecology and Health (HEEH) {.unnumbered}
+
+Welcome to the [HEEH](https://heeh.stanford.edu) group in the [Stanford Doerr School of Sustainability](https://sustainability.stanford.edu/).
+
+My research, and the research of members of the HEEH research group, is highly interdisciplinary, sitting at the intersection of the biological and social sciences and employing diverse methodologies. People in the group (myself included) employ quantitative, qualitative, and relational approaches to studying human ecology, adaptation, and infectious disease.
+
+As my work is so highly interdisciplinary, I think it's essential to understand what interdisciplinarity means and why it is useful since it is all-too-often misunderstood. This is particularly important for students doing their graduate work in E-IPER. There is no inherent value to interdisciplinary research. The value of interdisciplinarity lies in the ability to pursue answers to important scientific questions unencumbered by the conventions of a particular discipline. An interdisciplinary approach to science means that the researcher can use whatever tools she deems best at addressing a particular scientific (or policy) question. This reality highlights the need for prioritizing asking important scientific questions as the foundation for work in my research group and then being flexible (and sometimes entrepreneurial) in adopting methods to answer these questions.
+
+This "lab" is not a laboratory in the standard sense of the word. It has typically been characterized as more of a loose confederation of people working on more-or-less similar topics and employing overlapping methodologies. Work in anthropology tends to be quite independent, though specific projects may be undertaken by teams. There are two ideal forms that labs' organization in the natural sciences tend toward. We can represent these as graphs. The first is the star-graph, where all members collaborate with a single, central actor (presumably the PI).
+
+```{r}
+#| echo: false
+#| warning: false
+library(igraph)
+g1 <- make_star(10, mode="undirected")
+plot(g1, vertex.color="skyblue2", vertex.size=10, vertex.label=NA)
+```
+
+This star-graph is actually a pretty good representation of the interaction graph for many, more humanistic, cultural anthropologists, who have multiple students working on independent projects and little formal collaboration.
+
+The second ideal type is a (nearly) complete graph, where all members of the graph collaborate on all projects.
+
+```{r}
+#| echo: false
+g2 <- sample_gnm(n=10,m=40)
+plot(g2, vertex.color="skyblue2", vertex.size=10, vertex.label=NA)
+```
+
+This is more the organization of a lab that is highly mission-focused and works in a specific, wel-defined area of research.
+
+The organization of an interdisciplinary anthropological research group is naturally going to be more diffuse, potentially with multiple sub-communities even within a single lab. Here is a plot of the approximate interests of the lab as of Spring 2023. I've run a community-detection algorithm on the network. It's quite clear that there are two broad communities within the HEEH lab at this time: (1) the human behavioral ecology/life history/cultural evolution subgroup, and (2) the global health/disease ecology subgroup.
+
+![](images/lab_communities.png)
+
+## About This Manual
+
+This manual is very much a *living document*. It is written in [Quarto](https://quarto.org/) book format and will be expanded in the near future.

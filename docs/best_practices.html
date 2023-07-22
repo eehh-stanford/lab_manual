@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>HEEH Lab Manual - 5&nbsp; Best Practices</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./advice.html" rel="next">
+<link href="./open-science.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./best_practices.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Best Practices</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">HEEH Lab Manual</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Human Evolutionary Ecology and Health (HEEH)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./culture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Culture and Conduct</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./communications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Communications</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./open-science.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Open Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./best_practices.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Best Practices</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Life Advice for Prospective Scientists</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#analysis-in-r" id="toc-analysis-in-r" class="nav-link active" data-scroll-target="#analysis-in-r"><span class="header-section-number">5.1</span> Analysis in <code>R</code></a>
+  <ul class="collapse">
+  <li><a href="#every-figure-needs-a-script" id="toc-every-figure-needs-a-script" class="nav-link" data-scroll-target="#every-figure-needs-a-script"><span class="header-section-number">5.1.1</span> Every Figure Needs a Script</a></li>
+  <li><a href="#figures-should-be-sent-to-vector-graphics-devices" id="toc-figures-should-be-sent-to-vector-graphics-devices" class="nav-link" data-scroll-target="#figures-should-be-sent-to-vector-graphics-devices"><span class="header-section-number">5.1.2</span> Figures Should Be Sent to Vector-Graphics Devices</a></li>
+  <li><a href="#comment-extensively" id="toc-comment-extensively" class="nav-link" data-scroll-target="#comment-extensively"><span class="header-section-number">5.1.3</span> Comment Extensively</a></li>
+  <li><a href="#always-create-a-code-book" id="toc-always-create-a-code-book" class="nav-link" data-scroll-target="#always-create-a-code-book"><span class="header-section-number">5.1.4</span> Always Create a Code Book</a></li>
+  <li><a href="#use-r-projects" id="toc-use-r-projects" class="nav-link" data-scroll-target="#use-r-projects"><span class="header-section-number">5.1.5</span> Use <code>R</code> Projects</a></li>
+  </ul></li>
+  <li><a href="#dont-save-data-in-proprietary-formats" id="toc-dont-save-data-in-proprietary-formats" class="nav-link" data-scroll-target="#dont-save-data-in-proprietary-formats"><span class="header-section-number">5.2</span> Don’t Save Data in Proprietary Formats</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-best-practices" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Best Practices</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="analysis-in-r" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="analysis-in-r"><span class="header-section-number">5.1</span> Analysis in <code>R</code></h2>
+<p>Much of the work in our lab is done using the <code>R</code> statistical-programming language. While I am not big on prescription, there are definitely best practices that we should keep in mind when working in <code>R</code>. Many of these points apply to programming languages more generally, but, for concreteness, we will focus here on <code>R</code>.</p>
+<section id="every-figure-needs-a-script" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="every-figure-needs-a-script"><span class="header-section-number">5.1.1</span> Every Figure Needs a Script</h3>
+<p>Do not ever create a figure for a publication, presentation, or term paper without writing a script that can re-create that figure. The ability to do this is actually a very good reason to use <code>R</code> rather than some interactive-graphics software.</p>
+<p>When I was a graduate student, I had a figure in the draft of my dissertation. One of my committee members found a mistake in it. It took me three weeks to recreate the figure, which I had constructed interactively in <span class="smallcaps"><code>Matlab</code></span>. I vowed to never do that again. Now, you can cerainly write a <span class="smallcaps"><code>Matlab</code></span> script to construct a figure (and you should if you use <span class="smallcaps"><code>Matlab</code></span>). However, the workflows for generating self-contained scripts to generate figures are generally better. <code>R</code> is obviously better at handling data, human-readable labels for your data, and mixing different data types. It also lets you write self-contained scripts that include multiple functions (a <span class="smallcaps"><code>Matlab</code></span> file can contain only one function).</p>
+<p>Your script should do the following:</p>
+<ol type="1">
+<li>Read in the data from the original file (e.g., a <code>.csv</code> file).</li>
+<li>Perform whatever manipulations and transformations are necessary for the figure.</li>
+<li>Generate the figure and send it to a graphics output.</li>
+<li>Write the transformed data and any additional information you generated to a file (e.g., a binary <code>.RData</code> file) for later checking.</li>
+</ol>
+<p>You don’t submit the figure until you can clear the workspace (<code>rm(list=ls())</code>) and recreate the figure exactly from the script. You would be surprised, if not a little horrified, how idiosyncratic things that accumulate in your workspace can find their way into figures and fundamentally alter their character, meaning, and significance.</p>
+</section>
+<section id="figures-should-be-sent-to-vector-graphics-devices" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="figures-should-be-sent-to-vector-graphics-devices"><span class="header-section-number">5.1.2</span> Figures Should Be Sent to Vector-Graphics Devices</h3>
+<p>Don’t use the Export button on the RStudio plots tab! If you’re making something publication-quality, don’t use <code>.png</code> either.</p>
+<p>The easiest is <code>.pdf</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">"important_scientific_plot.pdf"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="do">## plotting commands</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The default size for <code>.pdf</code> files is <span class="math inline">\(7\times 7\)</span> inches. You can accommodate a two-panel plot, for example, that retains the default aspect ratio by adding the arguments <code>height=7, width=14</code> to your <code>pdf()</code> call.</p>
+<p>You need to always remember to turn off your graphics device. Otherwise, all subsequent graphics commands will be sent to the open device and you’ll either overwrite your figure or just keep adding more pages to it. Again, this is greatly facilitated by using a script to generate all your graphics.</p>
+<p>Many journals still require encapsulated postscript (<code>.eps</code>). Including the argument <code>onefile=FALSE</code> ensures that each file only contains a single image (which you generally want). The default orientation for postscript files is horizontal, filling the page. You probably don’t want that, but it’s a matter of taste. I sometimes use the argument <code>paper="special"</code> and then specify the dimensions of the figure as well (e.g., the default for <code>.pdf</code> so when you include the figure in your LaTeX document, you can use the same scaling, etc.).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">postscript</span>(<span class="at">file=</span><span class="st">"important_scientific_plot.eps"</span>, <span class="at">onefile=</span><span class="cn">FALSE</span>, </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">paper=</span><span class="st">"special"</span>, <span class="at">width=</span><span class="dv">7</span>,<span class="at">height=</span><span class="dv">7</span>, <span class="at">horizontal=</span><span class="cn">FALSE</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="do">## plotting commands</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Note that changing the size of your plotting device or using different devices (e.g., <code>.pdf</code> vs.&nbsp;<code>.png</code>) will cause things like axis labels, titles, legends, etc. look different. If you move between different file formats, you will need to make sure the plot aesthetics remain to your liking.</p>
+<p>There’s a lot to be said for <code>.svg</code> (scalable vector graphics). Among other things, it is readable by a text editor and thus has great data-preservation qualities.</p>
+</section>
+<section id="comment-extensively" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="comment-extensively"><span class="header-section-number">5.1.3</span> Comment Extensively</h3>
+<p>While you are in the throes of research, it may seem impossible that you will ever forget what you were doing when you wrote the code. You will. Indeed, you will probably be amazed at how quickly you forget what you were thinking. That constructed variable that you called <code>my_butt</code>, yup, you’re totally going to forget what that was, why you gave it such a cheeky name, and what it could possibly have to do with your very important and serious scientific research.</p>
+<p>The best way to ensure that you don’t forget what your code does is to comment liberally. Anything following a pound/hash in an <code>R</code> file is a comment.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## this is a comment</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="always-create-a-code-book" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="always-create-a-code-book"><span class="header-section-number">5.1.4</span> Always Create a Code Book</h3>
+<p>You know how you forgot what your code did? It will be even worse for your data. You coded sex as a binary 1/0 (which you probably shouldn’t do), but do you remember whether females or males were coded as 0? Do you remember which of your Likert variables are reverse-coded? I recently saw a data set from a well-known longitudinal study that has about a half dozen measures of body mass. Which one should you use for your analysis? Who knows, because they’re not explained in the code book. This is not good for replicability. It’s quite clear that the data were gathered without the expectation that they would be used by generations of researchers. At the risk of seeming grandiose, you should just write a code book for your data with the expectation that someone 20 years from now will be using it (including yourself).</p>
+<p>An excellent way to write a code book for small data sets is simply to write out the variable definitions about your data and then use the <code>skip</code> argument when you read the data using <code>read.table()</code>, <code>read.csv()</code>, or whatever the latest tidyverse tool is.</p>
+</section>
+<section id="use-r-projects" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="use-r-projects"><span class="header-section-number">5.1.5</span> Use <code>R</code> Projects</h3>
+<p>It’s probably a good idea. Organize the folders too. I don’t have strong opinions about the exact form of your R Project folder, but it’s good practice to have folders for data, figures, code, etc.</p>
+<p><code>R</code> uses a working directory. The default can be set in the Preferences or using an initialization file (i.e., a file that is always read when <code>R</code> starts up). If you read in a file without specifying a path, <code>R</code> will search in the working directory; if there is no file matching the name you provide, you receive an error message. This naturally leads many to specifying the working directory using the command <code>setwd()</code>.</p>
+<p>However, setting the working directory is actually not recommended. It is not a good scientific practice that favors replicability/interoperability/etc. In general, it’s better to use <code>R</code> Projects in the RStudio IDE. To start an <code>R</code> Project, either double-click on the <code>.RProj</code> file in the project’s directory or clicking on the <code>R</code> Project menu button in the upper right corner of your RStudio frame. To share the work you have done in an R Project with collaborators, students, or scientists looking to replicate your work, simply share the folder containing the <code>.RProj</code> file.</p>
+<p>When you quit <code>R</code>, you will be asked if you want to save your <code>R</code> session. If a session has previously been saved in your working directory, there will be a copy of the workspace in the <code>R</code> binary format named <code>.RData</code>. When <code>R</code> is started in a particular directory, if there is an <code>.RData</code> file in that directory, it will load automatically. This can lead to some surprising behavior if you don’t know that it can happen. For this reason, I don’t recommend automatically saving and loading workspaces. Best scientific practice involves constructing your workspace using broadly-interoperable data formats (e.g., <code>.csv</code> or other flat plain-text files) and scripts.</p>
+<p>When using <code>R</code> Projects, just remember to account for the file structure, e.g., in your graphics calls. Consider the simple pdf plot discussed above. If you did this in a R Project directory that contained a sub-directory called “figs,” you would need to append this to the file argument in your call to <code>pdf()</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">"figs/important_scientific_plot.pdf"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> <span class="do">## plotting commands</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="dont-save-data-in-proprietary-formats" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="dont-save-data-in-proprietary-formats"><span class="header-section-number">5.2</span> Don’t Save Data in Proprietary Formats</h2>
+<p>Read Abby Rumsey’s book, <em>When We Are No More: How Digital Memory Is Shaping Our Future</em>, if you want to be really scared about the robustness of accumulated human knowledge.</p>
+<p>As noted by the <a href="https://guides.library.stanford.edu/data-best-practices/format-files">Stanford Guide</a>, formats for data storage and longevity should be chosen according to some fundamental principles. Data formats should be non-proprietary, unencrypted, uncompressed, in common usage by the research community, and adherent to an open, documented standard.</p>
+<p>Database data should be saved in flat, or rectangular, file formats (i.e., data that can arranged into columns and rows). Probably the best format for long-term storage, preservation, and access is <code>.csv</code>.</p>
+<p>Whenever you can save data to a text-based (or at least readable) format, you should do so. There will probably always be text editors. While Microsoft Word may seem hegemonic now, word processors come and go. Most people younger than me probably don’t remember WordPerfect, which was the dominant word processor when I was in college.</p>
+<p>Lots of information at the <a href="https://www.loc.gov/preservation/digital/formats/">Library of Congress</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./open-science.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Open Science</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./advice.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Life Advice for Prospective Scientists</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

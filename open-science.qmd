@@ -1,0 +1,49 @@
+# Open Science {#sec-open-sci}
+
+We believe in the principles of open science. Have even written about the importance of it for anthropologists looking to make an impact with their science [@jones_etal2021b].
+
+I will be completely frank and say that this is very much a work-in-progress for me. Coming out of anthropology, there was very little tradition -- and absolutely no training -- in open science. However, open science is very consistent with my personal philosophy (and desire for producing the best scientific work) and I've received great help in learning these tools from collaborators and students alike. Among others, I am grateful to Anne Pisor, Elspeth Ready, Mike Price, and Matt Turner for lessons in the practice of open science.
+
+## Principles
+
+### Free and Open Software
+
+Whenever possible, use [free](https://www.gnu.org/philosophy/free-sw.html) software. Remember, free software is akin to "free speech," not "free beer."
+
+Using open-source software and publishing source code for analyses (lab [github](https://github.com/eehh-stanford)). For a model of how to do this, see the code repository for @turner_etal2023.
+
+Publishing data. However, this is sometimes complicated by the nature of field research on human subjects in communities. There are ethical considerations with which we must be conform.
+
+### Reproducibility
+
+When you're doing experiments or planning analysis of data collected in the field, pre-register your analysis plan. There are several different platforms that you can use for pre-registration. I use the [Open Science Framework](https://osf.io/).
+
+An essential -- and often under-appreciated -- element of reproducibility is *theory*. @muthukrishna_henrich2019 argue that the reproducibility crisis in the behavioral sciences -- and psychology in particular -- arises from poor use of theory. [Will Gervais](http://willgervais.com/) summarized this state of affairs perfectly in a meme:
+
+![](/images/theory_and_replicability.jpg)
+
+### Open-Access Publication
+
+Scientific publication in open-access outlets. We have a preference for open-access journals, but when this isn't possible, always publish preprints. Because of the interdisciplinary nature of our group, we use a variety of preprint servers including BioRXiv, PsyArXiv, SocArXiv, and OSF Preprints.
+
+Ensuring that your work is easily found is important both for your professional development and for the goal of making science broadly accessible. You should definitely get a [Google Scholar](https://scholar.google.com) profile as well as an [ORCID](https://orcid.org/) account.
+
+### Community Engagement
+
+Support for marginalized researchers.
+
+Engagement with collaborating communities.
+
+### Scientific Communication
+
+Strong SciComm game is essential.
+
+### Open Educational Material
+
+I also believe very strongly in open educational material.
+
+Some examples include my open course, [Life History Theory in Ten Papers](https://eehh-stanford.github.io/life_history_in_ten_papers/), that I ran in the pandemic Spring of 2020.
+
+Another example, which is very much a work-in-progress, is the material from my [Adaptation class](https://github.com/eehh-stanford/adaptation-class).
+
+In general, I think that providing brief explainers -- both written and video -- of key theoretical and methodological tools is an incredibly valuable service. It's hard to overstate how much I have learned from the generosity of scientists and other methodologists who have done this. I feel like we should all pay this service forward.

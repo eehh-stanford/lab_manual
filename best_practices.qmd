@@ -1,0 +1,98 @@
+# Best Practices {#sec-best-practices}
+
+## Analysis in `R`
+
+Much of the work in our lab is done using the `R` statistical-programming language. While I am not big on prescription, there are definitely best practices that we should keep in mind when working in `R`. Many of these points apply to programming languages more generally, but, for concreteness, we will focus here on `R`.
+
+### Every Figure Needs a Script
+
+Do not ever create a figure for a publication, presentation, or term paper without writing a script that can re-create that figure. The ability to do this is actually a very good reason to use `R` rather than some interactive-graphics software.
+
+When I was a graduate student, I had a figure in the draft of my dissertation. One of my committee members found a mistake in it. It took me three weeks to recreate the figure, which I had constructed interactively in [`Matlab`]{.smallcaps}. I vowed to never do that again. Now, you can cerainly write a [`Matlab`]{.smallcaps} script to construct a figure (and you should if you use [`Matlab`]{.smallcaps}). However, the workflows for generating self-contained scripts to generate figures are generally better. `R` is obviously better at handling data, human-readable labels for your data, and mixing different data types. It also lets you write self-contained scripts that include multiple functions (a [`Matlab`]{.smallcaps} file can contain only one function).
+
+Your script should do the following:
+
+1.  Read in the data from the original file (e.g., a `.csv` file).
+2.  Perform whatever manipulations and transformations are necessary for the figure.
+3.  Generate the figure and send it to a graphics output.
+4.  Write the transformed data and any additional information you generated to a file (e.g., a binary `.RData` file) for later checking.
+
+You don't submit the figure until you can clear the workspace (`rm(list=ls())`) and recreate the figure exactly from the script. You would be surprised, if not a little horrified, how idiosyncratic things that accumulate in your workspace can find their way into figures and fundamentally alter their character, meaning, and significance.
+
+### Figures Should Be Sent to Vector-Graphics Devices
+
+Don't use the Export button on the RStudio plots tab! If you're making something publication-quality, don't use `.png` either.
+
+The easiest is `.pdf`.
+
+```{r}
+#| eval: false
+pdf(file="important_scientific_plot.pdf")
+ ## plotting commands
+dev.off()
+```
+
+The default size for `.pdf` files is $7\times 7$ inches. You can accommodate a two-panel plot, for example, that retains the default aspect ratio by adding the arguments `height=7, width=14` to your `pdf()` call.
+
+You need to always remember to turn off your graphics device. Otherwise, all subsequent graphics commands will be sent to the open device and you'll either overwrite your figure or just keep adding more pages to it. Again, this is greatly facilitated by using a script to generate all your graphics.
+
+Many journals still require encapsulated postscript (`.eps`). Including the argument `onefile=FALSE` ensures that each file only contains a single image (which you generally want). The default orientation for postscript files is horizontal, filling the page. You probably don't want that, but it's a matter of taste. I sometimes use the argument `paper="special"` and then specify the dimensions of the figure as well (e.g., the default for `.pdf` so when you include the figure in your LaTeX document, you can use the same scaling, etc.).
+
+```{r}
+#| eval: false
+postscript(file="important_scientific_plot.eps", onefile=FALSE, 
+           paper="special", width=7,height=7, horizontal=FALSE)
+ ## plotting commands
+dev.off()
+```
+
+Note that changing the size of your plotting device or using different devices (e.g., `.pdf` vs. `.png`) will cause things like axis labels, titles, legends, etc. look different. If you move between different file formats, you will need to make sure the plot aesthetics remain to your liking.
+
+There's a lot to be said for `.svg` (scalable vector graphics). Among other things, it is readable by a text editor and thus has great data-preservation qualities.
+
+### Comment Extensively
+
+While you are in the throes of research, it may seem impossible that you will ever forget what you were doing when you wrote the code. You will. Indeed, you will probably be amazed at how quickly you forget what you were thinking. That constructed variable that you called `my_butt`, yup, you're totally going to forget what that was, why you gave it such a cheeky name, and what it could possibly have to do with your very important and serious scientific research.
+
+The best way to ensure that you don't forget what your code does is to comment liberally. Anything following a pound/hash in an `R` file is a comment.
+
+```{r}
+## this is a comment
+```
+
+### Always Create a Code Book
+
+You know how you forgot what your code did? It will be even worse for your data. You coded sex as a binary 1/0 (which you probably shouldn't do), but do you remember whether females or males were coded as 0? Do you remember which of your Likert variables are reverse-coded? I recently saw a data set from a well-known longitudinal study that has about a half dozen measures of body mass. Which one should you use for your analysis? Who knows, because they're not explained in the code book. This is not good for replicability. It's quite clear that the data were gathered without the expectation that they would be used by generations of researchers. At the risk of seeming grandiose, you should just write a code book for your data with the expectation that someone 20 years from now will be using it (including yourself).
+
+An excellent way to write a code book for small data sets is simply to write out the variable definitions about your data and then use the `skip` argument when you read the data using `read.table()`, `read.csv()`, or whatever the latest tidyverse tool is.
+
+### Use `R` Projects
+
+It's probably a good idea. Organize the folders too. I don't have strong opinions about the exact form of your R Project folder, but it's good practice to have folders for data, figures, code, etc.
+
+`R` uses a working directory. The default can be set in the Preferences or using an initialization file (i.e., a file that is always read when `R` starts up). If you read in a file without specifying a path, `R` will search in the working directory; if there is no file matching the name you provide, you receive an error message. This naturally leads many to specifying the working directory using the command `setwd()`. 
+
+However, setting the working directory is actually not recommended. It is not a good scientific practice that favors replicability/interoperability/etc. In general, it's better to use `R` Projects in the RStudio IDE. To start an `R` Project, either double-click on the `.RProj` file in the project's directory or clicking on the `R` Project menu button in the upper right corner of your RStudio frame. To share the work you have done in an R Project with collaborators, students, or scientists looking to replicate your work, simply share the folder containing the `.RProj` file. 
+
+When you quit `R`, you will be asked if you want to save your `R` session. If a session has previously been saved in your working directory, there will be a copy of the workspace in the `R` binary format named `.RData`. When `R` is started in a particular directory, if there is an `.RData` file in that directory, it will load automatically. This can lead to some surprising behavior if you don't know that it can happen. For this reason, I don't recommend automatically saving and loading workspaces. Best scientific practice involves constructing your workspace using broadly-interoperable data formats (e.g., `.csv` or other flat plain-text files) and scripts.
+
+When using `R` Projects, just remember to account for the file structure, e.g., in your graphics calls. Consider the simple pdf plot discussed above. If you did this in a R Project directory that contained a sub-directory called "figs," you would need to append this to the file argument in your call to `pdf()`:
+
+```{r}
+#| eval: false
+pdf(file="figs/important_scientific_plot.pdf")
+ ## plotting commands
+dev.off()
+```
+
+## Don't Save Data in Proprietary Formats
+
+Read Abby Rumsey's book, *When We Are No More: How Digital Memory Is Shaping Our Future*, if you want to be really scared about the robustness of accumulated human knowledge.
+
+As noted by the [Stanford Guide](https://guides.library.stanford.edu/data-best-practices/format-files), formats for data storage and longevity should be chosen according to some fundamental principles. Data formats should be non-proprietary, unencrypted, uncompressed, in common usage by the research community, and adherent to an open, documented standard.
+
+Database data should be saved in flat, or rectangular, file formats (i.e., data that can arranged into columns and rows). Probably the best format for long-term storage, preservation, and access is `.csv`.
+
+Whenever you can save data to a text-based (or at least readable) format, you should do so. There will probably always be text editors. While Microsoft Word may seem hegemonic now, word processors come and go. Most people younger than me probably don't remember WordPerfect, which was the dominant word processor when I was in college.
+
+Lots of information at the [Library of Congress](https://www.loc.gov/preservation/digital/formats/).

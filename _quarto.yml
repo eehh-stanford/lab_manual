@@ -1,0 +1,28 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "HEEH Lab Manual"
+  author: "Janmes Holland Jones"
+  date: "6/5/2023"
+  chapters:
+    - index.qmd
+    - culture.qmd
+    - communications.qmd
+    - tools.qmd
+    - open-science.qmd
+    - best_practices.qmd
+    - advice.qmd
+    - references.qmd
+
+bibliography: lab.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
