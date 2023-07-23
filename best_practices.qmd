@@ -70,9 +70,9 @@ An excellent way to write a code book for small data sets is simply to write out
 
 It's probably a good idea. Organize the folders too. I don't have strong opinions about the exact form of your R Project folder, but it's good practice to have folders for data, figures, code, etc.
 
-`R` uses a working directory. The default can be set in the Preferences or using an initialization file (i.e., a file that is always read when `R` starts up). If you read in a file without specifying a path, `R` will search in the working directory; if there is no file matching the name you provide, you receive an error message. This naturally leads many to specifying the working directory using the command `setwd()`. 
+`R` uses a working directory. The default can be set in the Preferences or using an initialization file (i.e., a file that is always read when `R` starts up). If you read in a file without specifying a path, `R` will search in the working directory; if there is no file matching the name you provide, you receive an error message. This naturally leads many to specifying the working directory using the command `setwd()`.
 
-However, setting the working directory is actually not recommended. It is not a good scientific practice that favors replicability/interoperability/etc. In general, it's better to use `R` Projects in the RStudio IDE. To start an `R` Project, either double-click on the `.RProj` file in the project's directory or clicking on the `R` Project menu button in the upper right corner of your RStudio frame. To share the work you have done in an R Project with collaborators, students, or scientists looking to replicate your work, simply share the folder containing the `.RProj` file. 
+However, setting the working directory is actually not recommended. It is not a good scientific practice that favors replicability/interoperability/etc. In general, it's better to use `R` Projects in the RStudio IDE. To start an `R` Project, either double-click on the `.RProj` file in the project's directory or clicking on the `R` Project menu button in the upper right corner of your RStudio frame. To share the work you have done in an R Project with collaborators, students, or scientists looking to replicate your work, simply share the folder containing the `.RProj` file.
 
 When you quit `R`, you will be asked if you want to save your `R` session. If a session has previously been saved in your working directory, there will be a copy of the workspace in the `R` binary format named `.RData`. When `R` is started in a particular directory, if there is an `.RData` file in that directory, it will load automatically. This can lead to some surprising behavior if you don't know that it can happen. For this reason, I don't recommend automatically saving and loading workspaces. Best scientific practice involves constructing your workspace using broadly-interoperable data formats (e.g., `.csv` or other flat plain-text files) and scripts.
 
@@ -87,7 +87,7 @@ dev.off()
 
 ## Don't Save Data in Proprietary Formats
 
-Read Abby Rumsey's book, *When We Are No More: How Digital Memory Is Shaping Our Future*, if you want to be really scared about the robustness of accumulated human knowledge.
+Read [Abby Rumsey](https://rumseywrites.com/)'s book, *When We Are No More: How Digital Memory Is Shaping Our Future*, if you want to be really scared about the robustness of accumulated human knowledge.
 
 As noted by the [Stanford Guide](https://guides.library.stanford.edu/data-best-practices/format-files), formats for data storage and longevity should be chosen according to some fundamental principles. Data formats should be non-proprietary, unencrypted, uncompressed, in common usage by the research community, and adherent to an open, documented standard.
 

@@ -26,7 +26,7 @@ g2 <- sample_gnm(n=10,m=40)
 plot(g2, vertex.color="skyblue2", vertex.size=10, vertex.label=NA)
 ```
 
-This is more the organization of a lab that is highly mission-focused and works in a specific, wel-defined area of research.
+This is more the organization of a lab that is highly mission-focused and works in a specific, well-defined area of research.
 
 The organization of an interdisciplinary anthropological research group is naturally going to be more diffuse, potentially with multiple sub-communities even within a single lab. Here is a plot of the approximate interests of the lab as of Spring 2023. I've run a community-detection algorithm on the network. It's quite clear that there are two broad communities within the HEEH lab at this time: (1) the human behavioral ecology/life history/cultural evolution subgroup, and (2) the global health/disease ecology subgroup.
 

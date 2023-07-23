@@ -5,7 +5,7 @@ project:
 book:
   title: "HEEH Lab Manual"
   author: "Janmes Holland Jones"
-  date: "6/5/2023"
+  date: "7/22/2023"
   chapters:
     - index.qmd
     - culture.qmd

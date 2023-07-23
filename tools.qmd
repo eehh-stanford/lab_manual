@@ -40,7 +40,7 @@ Working in interdisciplinary teams can make your choice of document-preparation 
 
 ### Text Editor
 
-You need to have a text editor. I will not wade into the editor wars because they're silly. I use [Emacs](https://www.gnu.org/software/emacs/). More people probably use [Vim](https://www.vim.org/). I honestly don't care what editor you use, but you need to learn to use a plain-text editor of some sort.
+You need to have a text editor. I will not wade into the editor wars because they're silly. I use [Emacs](https://www.gnu.org/software/emacs/). More people probably use [Vim](https://www.vim.org/). I honestly don't care what editor you use, but you need to learn to use a plain-text editor of some sort. Naturally, Randall Munroe has something [relevant to add](https://xkcd.com/378/) on this topic.
 
 ![](https://imgs.xkcd.com/comics/real_programmers.png)
 
