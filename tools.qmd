@@ -46,7 +46,7 @@ You need to have a text editor. I will not wade into the editor wars because the
 
 ## Version Control
 
-If you're not familiar with the concept of *version control*, you should become so. The best current tool for version control is [git](https://git-scm.com/). There is a [lab group](https://github.com/eehh-stanford) repository on GitHub, where most of our projects reside in both private and public repositories. You should definitely get yourself a GitHub account.
+If you're not familiar with the concept of *version control*, you should become so. The best current tool for version control is [git](https://git-scm.com/). There is a [lab group](https://github.com/eehh-stanford) repository on GitHub, where most of our projects reside in both private and public repositories. You should definitely get yourself a GitHub account. [Sarah Cobey](https://cobeylab.uchicago.edu/people/sarah-cobey/) has a [nice tutorial](https://github.com/cobeylab/version-control-training) on using git.
 
 ## Miscellaneous
 
